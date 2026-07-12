@@ -1,0 +1,172 @@
+[
+  {
+    "pergunta": "Qual o prazo para solicitar devolução de mercadoria?",
+    "chunks": [
+      {
+        "texto": "### 3.3. Procedimento de devolução\n\n1. O cliente abre chamado no Portal do Cliente (portal.novatech.com.br), selecionando a categoria \"Devolução de Mercadoria\".\n2. O chamado deve incluir: número do CT-e (Conhecimento de Transporte Eletrônico), fotos da mercadoria no estado atual (mínimo 3 fotos: embalagem externa, etiqueta de identificação, e conteúdo), e motivo da devolução.\n3. O time de atendimento tem 4 horas úteis para triagem do chamado (verificar elegibilidade, documentação e prazo).\n4. Se elegível, a coleta reversa é agendada em até 2 dias úteis após aprovação.\n5. O reembolso ou crédito é processado em até 5 dias úteis após o recebimento da mercadoria devolvida no centro de distribuição.",
+        "fonte": "",
+        "versao": "",
+        "score": 1.0,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 3. Prazo de entrega para frete especial\n\nO prazo de entrega para frete especial é calculado como o prazo padrão da rota + 2 dias úteis adicionais para manuseio de carga pesada.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0732,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nNa prática, a gente orienta o cliente a ligar no ramal 4500 (Gestão de Riscos). Oficialmente não pode pelo processo padrão, mas já tiveram casos em que o pessoal de Riscos autorizou exceção. Então não diga que é impossível — diga que precisa de tratamento especial.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0372,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### 3.5. Custos de devolução\n\n- Defeito ou erro da NovaTech (carga errada, avaria em trânsito): devolução sem custo para o cliente.\n- Desistência do cliente (carga correta, sem defeito): o custo do frete reverso é do cliente, calculado com os mesmos multiplicadores do frete original.\n- Prazo expirado (solicitação após 7 dias úteis): não elegível para devolução padrão. Encaminhar ao Comercial para negociação caso a caso.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0,
+        "classificacao": "informal"
+      }
+    ],
+    "prompt": "PARTE 1 — System prompt\nVocê é o assistente de atendimento da NovaTech.\n\nInstruções obrigatórias:\n- Responder SOMENTE com base nos trechos de documentação fornecidos.\n- Citar sempre a fonte (doc_id e nome do documento).\n- Se houver chunks de versões diferentes do mesmo documento (ex: PROC-042 v1 e v2 juntos), alertar explicitamente sobre o conflito e indicar qual é a versão mais recente.\n- Se algum chunk vier de documento com classificacao=\"informal\" ou confiavel=False, avisar que aquela informação vem de fonte não validada.\n- Se os chunks não cobrirem a pergunta, responder exatamente:\n  \"Não encontrei essa informação na documentação disponível.\"\n\nPARTE 2 — Contexto\n[CHUNK 1] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 3.3. Procedimento de devolução\nScore de similaridade: 1.00\n### 3.3. Procedimento de devolução\n\n1. O cliente abre chamado no Portal do Cliente (portal.novatech.com.br), selecionando a categoria \"Devolução de Mercadoria\".\n2. O chamado deve incluir: número do CT-e (Conhecimento de Transporte Eletrônico), fotos da mercadoria no estado atual (mínimo 3 fotos: embalagem externa, etiqueta de identificação, e conteúdo), e motivo da devolução.\n3. O time de atendimento tem 4 horas úteis para triagem do chamado (verificar elegibilidade, documentação e prazo).\n4. Se elegível, a coleta reversa é agendada em até 2 dias úteis após aprovação.\n5. O reembolso ou crédito é processado em até 5 dias úteis após o recebimento da mercadoria devolvida no centro de distribuição.\n\n[CHUNK 2] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 3. Prazo de entrega para frete especial\nScore de similaridade: 0.07\n## 3. Prazo de entrega para frete especial\n\nO prazo de entrega para frete especial é calculado como o prazo padrão da rota + 2 dias úteis adicionais para manuseio de carga pesada.\n\n[CHUNK 3] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nScore de similaridade: 0.04\n### Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nNa prática, a gente orienta o cliente a ligar no ramal 4500 (Gestão de Riscos). Oficialmente não pode pelo processo padrão, mas já tiveram casos em que o pessoal de Riscos autorizou exceção. Então não diga que é impossível — diga que precisa de tratamento especial.\n\n[CHUNK 4] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 3.5. Custos de devolução\nScore de similaridade: 0.00\n### 3.5. Custos de devolução\n\n- Defeito ou erro da NovaTech (carga errada, avaria em trânsito): devolução sem custo para o cliente.\n- Desistência do cliente (carga correta, sem defeito): o custo do frete reverso é do cliente, calculado com os mesmos multiplicadores do frete original.\n- Prazo expirado (solicitação após 7 dias úteis): não elegível para devolução padrão. Encaminhar ao Comercial para negociação caso a caso.\n\nPARTE 3 — Pergunta do atendente\nPergunta: Qual o prazo para solicitar devolução de mercadoria?"
+  },
+  {
+    "pergunta": "Posso devolver uma carga perigosa?",
+    "chunks": [
+      {
+        "texto": "### Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nNa prática, a gente orienta o cliente a ligar no ramal 4500 (Gestão de Riscos). Oficialmente não pode pelo processo padrão, mas já tiveram casos em que o pessoal de Riscos autorizou exceção. Então não diga que é impossível — diga que precisa de tratamento especial.",
+        "fonte": "",
+        "versao": "",
+        "score": 1.0,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 38 — \"Cliente quer saber a política para carga que chegou danificada.\"\nCarga danificada em trânsito tem processo diferente de devolução. O cliente precisa registrar a ocorrência em até 48h após o recebimento, com fotos e laudo se possível. A NovaTech investiga e, se comprovada responsabilidade nossa, reembolsa integralmente. Mas isso passa pelo Jurídico, não pelo atendimento normal — encaminhe para o e-mail sinistros@novatech.com.br.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.3607,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 32 — \"Pode enviar carga perigosa com frete expresso?\"\nSim, mas precisa de autorização do Compliance e a documentação ANTT tem que estar atualizada. Na prática, demora uns 2 dias para conseguir a autorização, então o 'expresso' acaba não sendo tão expresso. Avise o cliente sobre isso.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0722,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nA NovaTech oferece seguro de carga como adicional. O valor é 0,3% do valor declarado da mercadoria para cargas padrão e 0,8% para cargas perigosas. Detalhe: isso vale para contratos a partir de 2023. Contratos mais antigos podem ter percentuais diferentes — confirme com o Comercial.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0,
+        "classificacao": "informal"
+      }
+    ],
+    "prompt": "PARTE 1 — System prompt\nVocê é o assistente de atendimento da NovaTech.\n\nInstruções obrigatórias:\n- Responder SOMENTE com base nos trechos de documentação fornecidos.\n- Citar sempre a fonte (doc_id e nome do documento).\n- Se houver chunks de versões diferentes do mesmo documento (ex: PROC-042 v1 e v2 juntos), alertar explicitamente sobre o conflito e indicar qual é a versão mais recente.\n- Se algum chunk vier de documento com classificacao=\"informal\" ou confiavel=False, avisar que aquela informação vem de fonte não validada.\n- Se os chunks não cobrirem a pergunta, responder exatamente:\n  \"Não encontrei essa informação na documentação disponível.\"\n\nPARTE 2 — Contexto\n[CHUNK 1] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nScore de similaridade: 1.00\n### Item 3 — \"Cliente perguntou se pode devolver carga perigosa. O que respondo?\"\nNa prática, a gente orienta o cliente a ligar no ramal 4500 (Gestão de Riscos). Oficialmente não pode pelo processo padrão, mas já tiveram casos em que o pessoal de Riscos autorizou exceção. Então não diga que é impossível — diga que precisa de tratamento especial.\n\n[CHUNK 2] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 38 — \"Cliente quer saber a política para carga que chegou danificada.\"\nScore de similaridade: 0.36\n### Item 38 — \"Cliente quer saber a política para carga que chegou danificada.\"\nCarga danificada em trânsito tem processo diferente de devolução. O cliente precisa registrar a ocorrência em até 48h após o recebimento, com fotos e laudo se possível. A NovaTech investiga e, se comprovada responsabilidade nossa, reembolsa integralmente. Mas isso passa pelo Jurídico, não pelo atendimento normal — encaminhe para o e-mail sinistros@novatech.com.br.\n\n[CHUNK 3] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 32 — \"Pode enviar carga perigosa com frete expresso?\"\nScore de similaridade: 0.07\n### Item 32 — \"Pode enviar carga perigosa com frete expresso?\"\nSim, mas precisa de autorização do Compliance e a documentação ANTT tem que estar atualizada. Na prática, demora uns 2 dias para conseguir a autorização, então o 'expresso' acaba não sendo tão expresso. Avise o cliente sobre isso.\n\n[CHUNK 4] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nScore de similaridade: 0.00\n### Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nA NovaTech oferece seguro de carga como adicional. O valor é 0,3% do valor declarado da mercadoria para cargas padrão e 0,8% para cargas perigosas. Detalhe: isso vale para contratos a partir de 2023. Contratos mais antigos podem ter percentuais diferentes — confirme com o Comercial.\n\nPARTE 3 — Pergunta do atendente\nPergunta: Posso devolver uma carga perigosa?"
+  },
+  {
+    "pergunta": "Qual o SLA do cliente Gold para incidentes críticos?",
+    "chunks": [
+      {
+        "texto": "### Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nResposta é quando a gente dá o primeiro retorno ao cliente (mesmo que seja 'estamos verificando'). Resolução é quando o problema é efetivamente resolvido. O Gold tem 2h de resposta e 24h de resolução. Silver é 4h e 48h. Standard é 8h e 72h. Para incidentes críticos, os prazos são menores — veja a tabela SLA-2024.",
+        "fonte": "",
+        "versao": "",
+        "score": 1.0,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 3. Definição de incidente crítico\n\nUm incidente é classificado como crítico quando atende a pelo menos um dos seguintes critérios:\n\n- Carga com valor declarado acima de R$ 100.000 está com status desconhecido há mais de 6 horas.\n- Carga perigosa com qualquer irregularidade de documentação ou rastreamento.\n- Mais de 5 chamados do mesmo cliente nas últimas 24 horas sobre o mesmo problema.\n- Qualquer situação que envolva risco à segurança de pessoas.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.8912,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 5. Medição e reportes\n\nOs SLAs são medidos pelo sistema de chamados (Azure DevOps) a partir do timestamp de abertura do chamado. O relógio de SLA pausa fora do horário comercial (08h-18h, dias úteis) para chamados gerais, mas não pausa para incidentes críticos de clientes Gold.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.7291,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 15 — \"Cliente diz que é Platinum. Existe esse tier?\"\nNão existe tier Platinum na NovaTech. Às vezes o cliente confunde com outra transportadora ou com o programa de fidelidade antigo que foi descontinuado em 2022. Oriente que nossos tiers são Gold, Silver e Standard e peça o número do contrato para verificar.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0,
+        "classificacao": "informal"
+      }
+    ],
+    "prompt": "PARTE 1 — System prompt\nVocê é o assistente de atendimento da NovaTech.\n\nInstruções obrigatórias:\n- Responder SOMENTE com base nos trechos de documentação fornecidos.\n- Citar sempre a fonte (doc_id e nome do documento).\n- Se houver chunks de versões diferentes do mesmo documento (ex: PROC-042 v1 e v2 juntos), alertar explicitamente sobre o conflito e indicar qual é a versão mais recente.\n- Se algum chunk vier de documento com classificacao=\"informal\" ou confiavel=False, avisar que aquela informação vem de fonte não validada.\n- Se os chunks não cobrirem a pergunta, responder exatamente:\n  \"Não encontrei essa informação na documentação disponível.\"\n\nPARTE 2 — Contexto\n[CHUNK 1] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nScore de similaridade: 1.00\n### Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nResposta é quando a gente dá o primeiro retorno ao cliente (mesmo que seja 'estamos verificando'). Resolução é quando o problema é efetivamente resolvido. O Gold tem 2h de resposta e 24h de resolução. Silver é 4h e 48h. Standard é 8h e 72h. Para incidentes críticos, os prazos são menores — veja a tabela SLA-2024.\n\n[CHUNK 2] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 3. Definição de incidente crítico\nScore de similaridade: 0.89\n## 3. Definição de incidente crítico\n\nUm incidente é classificado como crítico quando atende a pelo menos um dos seguintes critérios:\n\n- Carga com valor declarado acima de R$ 100.000 está com status desconhecido há mais de 6 horas.\n- Carga perigosa com qualquer irregularidade de documentação ou rastreamento.\n- Mais de 5 chamados do mesmo cliente nas últimas 24 horas sobre o mesmo problema.\n- Qualquer situação que envolva risco à segurança de pessoas.\n\n[CHUNK 3] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 5. Medição e reportes\nScore de similaridade: 0.73\n## 5. Medição e reportes\n\nOs SLAs são medidos pelo sistema de chamados (Azure DevOps) a partir do timestamp de abertura do chamado. O relógio de SLA pausa fora do horário comercial (08h-18h, dias úteis) para chamados gerais, mas não pausa para incidentes críticos de clientes Gold.\n\n[CHUNK 4] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 15 — \"Cliente diz que é Platinum. Existe esse tier?\"\nScore de similaridade: 0.00\n### Item 15 — \"Cliente diz que é Platinum. Existe esse tier?\"\nNão existe tier Platinum na NovaTech. Às vezes o cliente confunde com outra transportadora ou com o programa de fidelidade antigo que foi descontinuado em 2022. Oriente que nossos tiers são Gold, Silver e Standard e peça o número do contrato para verificar.\n\nPARTE 3 — Pergunta do atendente\nPergunta: Qual o SLA do cliente Gold para incidentes críticos?"
+  },
+  {
+    "pergunta": "Qual o multiplicador de frete especial para o Nordeste?",
+    "chunks": [
+      {
+        "texto": "### 2.1. Multiplicadores regionais (atualizados em novembro/2023)\n\n| Região | Multiplicador |\n|--------|--------------|\n| Sul | 1.3 |\n| Sudeste | 1.1 |\n| Centro-Oeste | 1.4 |\n| Nordeste | 1.5 |\n| Norte | 1.8 |",
+        "fonte": "",
+        "versao": "",
+        "score": 1.0,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### 2.1. Multiplicadores regionais\n\n| Região | Multiplicador |\n|--------|--------------|\n| Sul | 1.2 |\n| Sudeste | 1.0 |\n| Centro-Oeste | 1.3 |\n| Nordeste | 1.4 |\n| Norte | 1.6 |",
+        "fonte": "",
+        "versao": "",
+        "score": 0.9061,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 8 — \"Como funciona o frete especial?\"\nAcima de 500kg, aplica a tabela de multiplicadores por região. Cuidado: existem duas versões da PROC-042. A mais recente tem multiplicadores mais altos. Na dúvida, use a mais recente (v2), mas se o cliente reclamar do valor, pode ser que o contrato dele ainda esteja na tabela antiga.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0065,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "### Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nResposta é quando a gente dá o primeiro retorno ao cliente (mesmo que seja 'estamos verificando'). Resolução é quando o problema é efetivamente resolvido. O Gold tem 2h de resposta e 24h de resolução. Silver é 4h e 48h. Standard é 8h e 72h. Para incidentes críticos, os prazos são menores — veja a tabela SLA-2024.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0,
+        "classificacao": "informal"
+      }
+    ],
+    "prompt": "PARTE 1 — System prompt\nVocê é o assistente de atendimento da NovaTech.\n\nInstruções obrigatórias:\n- Responder SOMENTE com base nos trechos de documentação fornecidos.\n- Citar sempre a fonte (doc_id e nome do documento).\n- Se houver chunks de versões diferentes do mesmo documento (ex: PROC-042 v1 e v2 juntos), alertar explicitamente sobre o conflito e indicar qual é a versão mais recente.\n- Se algum chunk vier de documento com classificacao=\"informal\" ou confiavel=False, avisar que aquela informação vem de fonte não validada.\n- Se os chunks não cobrirem a pergunta, responder exatamente:\n  \"Não encontrei essa informação na documentação disponível.\"\n\nPARTE 2 — Contexto\n[CHUNK 1] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 2.1. Multiplicadores regionais (atualizados em novembro/2023)\nScore de similaridade: 1.00\n### 2.1. Multiplicadores regionais (atualizados em novembro/2023)\n\n| Região | Multiplicador |\n|--------|--------------|\n| Sul | 1.3 |\n| Sudeste | 1.1 |\n| Centro-Oeste | 1.4 |\n| Nordeste | 1.5 |\n| Norte | 1.8 |\n\n[CHUNK 2] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 2.1. Multiplicadores regionais\nScore de similaridade: 0.91\n### 2.1. Multiplicadores regionais\n\n| Região | Multiplicador |\n|--------|--------------|\n| Sul | 1.2 |\n| Sudeste | 1.0 |\n| Centro-Oeste | 1.3 |\n| Nordeste | 1.4 |\n| Norte | 1.6 |\n\n[CHUNK 3] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 8 — \"Como funciona o frete especial?\"\nScore de similaridade: 0.01\n### Item 8 — \"Como funciona o frete especial?\"\nAcima de 500kg, aplica a tabela de multiplicadores por região. Cuidado: existem duas versões da PROC-042. A mais recente tem multiplicadores mais altos. Na dúvida, use a mais recente (v2), mas se o cliente reclamar do valor, pode ser que o contrato dele ainda esteja na tabela antiga.\n\n[CHUNK 4] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nScore de similaridade: 0.00\n### Item 41 — \"Qual a diferença entre SLA de resposta e SLA de resolução?\"\nResposta é quando a gente dá o primeiro retorno ao cliente (mesmo que seja 'estamos verificando'). Resolução é quando o problema é efetivamente resolvido. O Gold tem 2h de resposta e 24h de resolução. Silver é 4h e 48h. Standard é 8h e 72h. Para incidentes críticos, os prazos são menores — veja a tabela SLA-2024.\n\nPARTE 3 — Pergunta do atendente\nPergunta: Qual o multiplicador de frete especial para o Nordeste?"
+  },
+  {
+    "pergunta": "Qual o frete para uma carga de 300kg para São Paulo?",
+    "chunks": [
+      {
+        "texto": "### Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nA NovaTech oferece seguro de carga como adicional. O valor é 0,3% do valor declarado da mercadoria para cargas padrão e 0,8% para cargas perigosas. Detalhe: isso vale para contratos a partir de 2023. Contratos mais antigos podem ter percentuais diferentes — confirme com o Comercial.",
+        "fonte": "",
+        "versao": "",
+        "score": 1.0,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 4. Condições especiais\n\n- Cargas acima de 5.000kg requerem aprovação prévia do gerente de operações regional.\n- Cargas perigosas com peso acima de 500kg seguem tabela específica (PROC-043: Frete de Cargas Perigosas).\n- Descontos de volume (mais de 10 fretes especiais/mês para o mesmo cliente) devem ser negociados pelo Comercial e registrados em aditivo contratual.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.7223,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 4. Condições especiais\n\n- Cargas acima de 5.000kg requerem aprovação prévia do gerente de operações regional.\n- Cargas perigosas com peso acima de 500kg seguem tabela específica (PROC-043: Frete de Cargas Perigosas). Nota: a PROC-043 está em processo de revisão pelo Compliance e pode sofrer alterações.\n- Descontos de volume: a partir de 8 fretes especiais/mês para o mesmo cliente, aplicar desconto de 5% sobre o multiplicador regional. Acima de 15 fretes/mês, desconto de 10%. Descontos maiores requerem aprovação da Diretoria Comercial.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.5107,
+        "classificacao": "informal"
+      },
+      {
+        "texto": "## 1. Objetivo\n\nDefinir a fórmula e os parâmetros para cálculo de frete especial aplicável a cargas com peso acima de 500kg.",
+        "fonte": "",
+        "versao": "",
+        "score": 0.0,
+        "classificacao": "informal"
+      }
+    ],
+    "prompt": "PARTE 1 — System prompt\nVocê é o assistente de atendimento da NovaTech.\n\nInstruções obrigatórias:\n- Responder SOMENTE com base nos trechos de documentação fornecidos.\n- Citar sempre a fonte (doc_id e nome do documento).\n- Se houver chunks de versões diferentes do mesmo documento (ex: PROC-042 v1 e v2 juntos), alertar explicitamente sobre o conflito e indicar qual é a versão mais recente.\n- Se algum chunk vier de documento com classificacao=\"informal\" ou confiavel=False, avisar que aquela informação vem de fonte não validada.\n- Se os chunks não cobrirem a pergunta, responder exatamente:\n  \"Não encontrei essa informação na documentação disponível.\"\n\nPARTE 2 — Contexto\n[CHUNK 1] Fonte: desconhecido — Sem título (versão N/A)\nSeção: Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nScore de similaridade: 1.00\n### Item 22 — \"Cliente quer saber sobre seguro de carga. O que falar?\"\nA NovaTech oferece seguro de carga como adicional. O valor é 0,3% do valor declarado da mercadoria para cargas padrão e 0,8% para cargas perigosas. Detalhe: isso vale para contratos a partir de 2023. Contratos mais antigos podem ter percentuais diferentes — confirme com o Comercial.\n\n[CHUNK 2] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 4. Condições especiais\nScore de similaridade: 0.72\n## 4. Condições especiais\n\n- Cargas acima de 5.000kg requerem aprovação prévia do gerente de operações regional.\n- Cargas perigosas com peso acima de 500kg seguem tabela específica (PROC-043: Frete de Cargas Perigosas).\n- Descontos de volume (mais de 10 fretes especiais/mês para o mesmo cliente) devem ser negociados pelo Comercial e registrados em aditivo contratual.\n\n[CHUNK 3] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 4. Condições especiais\nScore de similaridade: 0.51\n## 4. Condições especiais\n\n- Cargas acima de 5.000kg requerem aprovação prévia do gerente de operações regional.\n- Cargas perigosas com peso acima de 500kg seguem tabela específica (PROC-043: Frete de Cargas Perigosas). Nota: a PROC-043 está em processo de revisão pelo Compliance e pode sofrer alterações.\n- Descontos de volume: a partir de 8 fretes especiais/mês para o mesmo cliente, aplicar desconto de 5% sobre o multiplicador regional. Acima de 15 fretes/mês, desconto de 10%. Descontos maiores requerem aprovação da Diretoria Comercial.\n\n[CHUNK 4] Fonte: desconhecido — Sem título (versão N/A)\nSeção: 1. Objetivo\nScore de similaridade: 0.00\n## 1. Objetivo\n\nDefinir a fórmula e os parâmetros para cálculo de frete especial aplicável a cargas com peso acima de 500kg.\n\nPARTE 3 — Pergunta do atendente\nPergunta: Qual o frete para uma carga de 300kg para São Paulo?"
+  }
+]

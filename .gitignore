@@ -1,0 +1,13 @@
+.claude
+.vscode
+
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+dist/
+build/
+*.egg-info/
+
+**/chroma_db/
